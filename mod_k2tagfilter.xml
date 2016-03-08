@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4" client="site" method="upgrade">
+	<name>MOD_K2TAGFILTER_NAME</name>
+	<author>Simon Champion, SFW Ltd</author>
+	<creationDate>January 2016</creationDate>
+    <copyright>Copyright (C) 2016 SFW Ltd.</copyright>
+    <license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <authorEmail>simonc@sfwltd.co.uk</authorEmail>
+    <authorUrl>http://www.sfwltd.co.uk/</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_K2TAGFILTER_DESCRIPTION</description>
+	<files>
+		<filename module="mod_k2tagfilter">mod_k2tagfilter.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_k2tagfilter.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_k2tagfilter.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="label"
+					type="label"
+					label="MOD_K2TAGFILTER_LABEL_LABEL"
+					description="MOD_K2TAGFILTER_LABEL_DESC"
+                    default="Tag Filter" />
+				<field
+					name="unselected_text"
+					type="text"
+					label="MOD_K2TAGFILTER_UNSELECTED_LABEL"
+					description="MOD_K2TAGFILTER_UNSELECTED_DESC"
+                    default="Select a tag" />
+				<field
+					name="k2cat"
+					type="text"
+					label="MOD_K2TAGFILTER_K2CAT_LABEL"
+					description="MOD_K2TAGFILTER_K2CAT_DESC"
+                    default="0" />
+				<field
+					name="button_text"
+					type="text"
+					label="MOD_K2TAGFILTER_BUTTON_LABEL"
+					description="MOD_K2TAGFILTER_BUTTON_LABEL"
+                    default="FILTER" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
